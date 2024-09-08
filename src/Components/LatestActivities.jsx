@@ -1,5 +1,6 @@
 // src/Components/LatestActivities.jsx
-import { useState, useEffect } from "react";
+
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 const LatestActivities = ({ activities }) => {
@@ -25,7 +26,7 @@ const LatestActivities = ({ activities }) => {
   };
 
   return (
-    <div className="border-b border-neutral-900 pb-4">
+    <div className="relative mt-20">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
@@ -35,7 +36,7 @@ const LatestActivities = ({ activities }) => {
         Latest Activities
       </motion.h2>
 
-      <div className="relative overflow-hidden w-full h-64">
+      <div className="overflow-hidden relative w-full h-64">
         {activities.map((activity, index) => (
           <motion.div
             key={index}
@@ -47,7 +48,7 @@ const LatestActivities = ({ activities }) => {
             }`}
           >
             <img
-              src={require(`../assets/${activity.image}`).default}
+              src={activity.image}
               alt={activity.title}
               className="w-full h-full object-cover rounded-lg"
             />

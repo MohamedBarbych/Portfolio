@@ -13,6 +13,7 @@ import NavSideBar from "./Components/SideBar";
 import ChatbotScript from "./Components/ChatbotScript";
 import LatestActivities from "./Components/LatestActivities";
 
+// Importing the latest activities data
 import { LATEST_ACTIVITIES } from "./assets/constants/index";
 
 const App = () => {
