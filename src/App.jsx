@@ -10,6 +10,7 @@ import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 import ParticlesComponent from "./ParticlesComponent";
 import NavSideBar from "./Components/SideBar";
+import ChatbotScript from "./Components/ChatbotScript";
 
 const App = () => {
   return (
@@ -41,6 +42,8 @@ const App = () => {
           <Contact />
         </section>
       </div>
+
+      <ChatbotScript />
     </div>
   );
 };
