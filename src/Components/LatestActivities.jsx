@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 
 const LatestActivities = ({ activities }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalImage, setModalImage] = useState("");
 
   // Auto-slide every 3 seconds
   useEffect(() => {
@@ -23,6 +25,18 @@ const LatestActivities = ({ activities }) => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % activities.length);
   };
 
+  // Open modal to display full-size image
+  const handleImageClick = (image) => {
+    setModalImage(image);
+    setIsModalOpen(true);
+  };
+
+  // Close modal
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setModalImage("");
+  };
+
   return (
     <div className="relative mt-20">
       <motion.h2
@@ -34,7 +48,7 @@ const LatestActivities = ({ activities }) => {
         Latest Activities
       </motion.h2>
 
-      <div className="overflow-hidden relative mx-auto w-screen h-[40rem]">
+      <div className="overflow-hidden relative mx-auto max-w-6xl h-[32rem]">
         {activities.map((activity, index) => (
           <motion.div
             key={index}
@@ -48,7 +62,8 @@ const LatestActivities = ({ activities }) => {
             <img
               src={activity.image}
               alt={activity.title}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover cursor-pointer"
+              onClick={() => handleImageClick(activity.image)}
             />
             <div className="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50 text-white">
               <h3>{activity.title}</h3>
@@ -72,6 +87,23 @@ const LatestActivities = ({ activities }) => {
           →
         </button>
       </div>
+
+      {/* Modal for full-size image */}
+      {isModalOpen && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50">
+          <button
+            className="absolute top-4 right-4 text-white"
+            onClick={handleCloseModal}
+          >
+            ✖
+          </button>
+          <img
+            src={modalImage}
+            alt="Full size"
+            className="max-w-full max-h-full"
+          />
+        </div>
+      )}
     </div>
   );
 };
