@@ -29,12 +29,12 @@ const LatestActivities = ({ activities }) => {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 0.5 }}
-        className="my-20 text-center text-4xl"
+        className="my-20 text-center text-4xl font-bold bg-gradient-to-r from-transparent via-slate-500 to-purple-500 text-transparent bg-clip-text"
       >
         Latest Activities
       </motion.h2>
 
-      <div className="overflow-hidden relative mx-auto max-w-4xl h-96">
+      <div className="overflow-hidden relative mx-auto w-screen h-[40rem]">
         {activities.map((activity, index) => (
           <motion.div
             key={index}
@@ -58,7 +58,7 @@ const LatestActivities = ({ activities }) => {
 
         {/* Left arrow */}
         <button
-          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 p-2 text-white"
+          className="absolute left-0 top-1/2 transform -translate-y-1/2 p-2 text-white bg-gradient-to-r from-transparent via-slate-500 to-purple-500 hover:from-slate-500 hover:to-purple-500"
           onClick={handlePrev}
         >
           ←
@@ -66,7 +66,7 @@ const LatestActivities = ({ activities }) => {
 
         {/* Right arrow */}
         <button
-          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 p-2 text-white"
+          className="absolute right-0 top-1/2 transform -translate-y-1/2 p-2 text-white bg-gradient-to-r from-transparent via-slate-500 to-purple-500 hover:from-slate-500 hover:to-purple-500"
           onClick={handleNext}
         >
           →
