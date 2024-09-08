@@ -43,7 +43,7 @@ const LatestActivities = ({ activities }) => {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 0.5 }}
-        className="my-20 text-center text-4xl font-bold bg-gradient-to-r from-transparent via-slate-500 to-purple-500 text-transparent bg-clip-text"
+        className="my-20 text-center text-4xl"
       >
         Latest Activities
       </motion.h2>
