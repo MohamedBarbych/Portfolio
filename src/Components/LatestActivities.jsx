@@ -25,7 +25,7 @@ const LatestActivities = ({ activities }) => {
   };
 
   return (
-    <div className="relative mt-20">
+    <div className="border-b border-neutral-900 pb-4">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
@@ -35,7 +35,7 @@ const LatestActivities = ({ activities }) => {
         Latest Activities
       </motion.h2>
 
-      <div className="overflow-hidden relative w-full h-64">
+      <div className="relative overflow-hidden w-full h-64">
         {activities.map((activity, index) => (
           <motion.div
             key={index}
