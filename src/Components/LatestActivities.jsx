@@ -38,7 +38,7 @@ const LatestActivities = ({ activities }) => {
   };
 
   return (
-    <div className="relative mt-20">
+    <div className="relative mt-20 border-b border-neutral-900 pb-4">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
@@ -66,7 +66,7 @@ const LatestActivities = ({ activities }) => {
               onClick={() => handleImageClick(activity.image)}
             />
             <div className="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50 text-white">
-              <h3>{activity.title}</h3>
+              <h3 className="text-lg font-semibold">{activity.title}</h3>
             </div>
           </motion.div>
         ))}
