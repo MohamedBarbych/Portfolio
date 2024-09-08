@@ -58,7 +58,7 @@ const LatestActivities = ({ activities }) => {
 
         {/* Left arrow */}
         <button
-          className="absolute left-0 top-1/2 transform -translate-y-1/2 p-2 text-white bg-gradient-to-r from-transparent via-slate-500 to-purple-500 hover:from-slate-500 hover:to-purple-500"
+          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 p-2 text-white"
           onClick={handlePrev}
         >
           ←
@@ -66,7 +66,7 @@ const LatestActivities = ({ activities }) => {
 
         {/* Right arrow */}
         <button
-          className="absolute right-0 top-1/2 transform -translate-y-1/2 p-2 text-white bg-gradient-to-r from-transparent via-slate-500 to-purple-500 hover:from-slate-500 hover:to-purple-500"
+          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 p-2 text-white"
           onClick={handleNext}
         >
           →
