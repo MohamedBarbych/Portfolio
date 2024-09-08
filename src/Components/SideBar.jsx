@@ -1,4 +1,5 @@
 // src/Components/NavSideBar.jsx
+
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -8,6 +9,7 @@ import {
   faEnvelope,
   faBriefcase,
   faLaptopCode,
+  faImage, // Add icon for Latest Activities
 } from "@fortawesome/free-solid-svg-icons";
 import useIntersectionObserver from "../hooks/useIntersectionObserver";
 
@@ -57,6 +59,16 @@ const NavSideBar = () => {
             }`}
           >
             <FontAwesomeIcon icon={faProjectDiagram} size="1x" />
+          </a>
+        </li>
+        <li>
+          <a
+            href="#latest-activities"
+            className={`text-neutral-300 hover:text-purple-400 ${
+              activeId === "latest-activities" ? "text-purple-400" : ""
+            }`}
+          >
+            <FontAwesomeIcon icon={faImage} size="1x" /> {/* New icon */}
           </a>
         </li>
         <li>

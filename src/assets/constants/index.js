@@ -1,3 +1,4 @@
+// Importing project images from the correct relative path
 import project1 from "../projects/project-1.png";
 import project2 from "../projects/project-2.png";
 import project3 from "../projects/project-3.png";
@@ -5,6 +6,14 @@ import project4 from "../projects/project-4.png";
 import project5 from "../projects/project-5.png";
 import project6 from "../projects/project-6.png";
 import project7 from "../projects/project-7.png";
+
+// Importing activity images from the correct relative path
+import activity1 from "../activities/Hackathon1.jpg";
+import activity2 from "../activities/Hackathon2.jpg";
+import activity3 from "../activities/Hackathon3.jpg";
+import activity4 from "../activities/plage1.jpg";
+import activity5 from "../activities/plage3.jpg";
+import activity6 from "../activities/plage8.png";
 
 export const HERO_CONTENT = `I am a Moroccan Software and AI Engineering student at FST Tangier with a passion for Unity game development and full stack web development. My academic journey and projects have provided me with a strong foundation in AI and machine learning. I aim to leverage my skills to create innovative solutions and immersive gaming experiences, contributing to advancements in technology and the gaming industry.`;
 
@@ -103,3 +112,33 @@ export const CONTACT = {
   phoneNo: "+2126-10-62-62-26 ",
   email: "mohamedbarbych1@gmail.com",
 };
+
+export const LATEST_ACTIVITIES = [
+  {
+    title: "First Prize at 'Sustainable Coast' Hackathon for Playa-Amigos",
+    image: activity1,
+  },
+  {
+    title: "First Prize at 'Sustainable Coast' Hackathon for Playa-Amigos",
+    image: activity2,
+  },
+  {
+    title: "First Prize at 'Sustainable Coast' Hackathon for Playa-Amigos",
+    image: activity3,
+  },
+  {
+    title:
+      "Environmental Educator: Coastal Protection Awareness through Educational Games",
+    image: activity4,
+  },
+  {
+    title:
+      "Environmental Educator: Coastal Protection Awareness through Educational Games",
+    image: activity5,
+  },
+  {
+    title:
+      "Environmental Educator: Coastal Protection Awareness through Educational Games",
+    image: activity6,
+  },
+];

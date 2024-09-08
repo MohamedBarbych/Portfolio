@@ -11,6 +11,9 @@ import Contact from "./Components/Contact";
 import ParticlesComponent from "./ParticlesComponent";
 import NavSideBar from "./Components/SideBar";
 import ChatbotScript from "./Components/ChatbotScript";
+import LatestActivities from "./Components/LatestActivities";
+
+import { LATEST_ACTIVITIES } from "./assets/constants/index";
 
 const App = () => {
   return (
@@ -34,6 +37,9 @@ const App = () => {
         </section>
         <section id="experience">
           <Experience />
+        </section>
+        <section id="latest-activities">
+          <LatestActivities activities={LATEST_ACTIVITIES} />
         </section>
         <section id="projects">
           <Projects />
