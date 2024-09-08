@@ -1,16 +1,14 @@
-// src/Components/LatestActivities.jsx
-
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 const LatestActivities = ({ activities }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Auto-slide every 1 second
+  // Auto-slide every 3 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % activities.length);
-    }, 1000); // Change every 1 second
+    }, 3000); // Change every 3 seconds
     return () => clearInterval(interval);
   }, [activities.length]);
 
@@ -45,12 +43,12 @@ const LatestActivities = ({ activities }) => {
             transition={{ duration: 0.5 }}
             className={`absolute inset-0 ${
               index === currentIndex ? "block" : "hidden"
-            }`}
+            } w-full h-full`}
           >
             <img
               src={activity.image}
               alt={activity.title}
-              className="w-full h-full object-cover rounded-lg"
+              className="w-full h-full object-cover"
             />
             <div className="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50 text-white">
               <h3>{activity.title}</h3>
