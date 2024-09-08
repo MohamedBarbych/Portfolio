@@ -34,7 +34,7 @@ const LatestActivities = ({ activities }) => {
         Latest Activities
       </motion.h2>
 
-      <div className="overflow-hidden relative w-full h-64">
+      <div className="overflow-hidden relative mx-auto max-w-4xl h-96">
         {activities.map((activity, index) => (
           <motion.div
             key={index}
