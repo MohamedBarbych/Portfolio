@@ -1,4 +1,5 @@
 // Importing project images from the correct relative path
+import project01 from "../projects/project-01.png";
 import project1 from "../projects/project-1.png";
 import project2 from "../projects/project-2.png";
 import project3 from "../projects/project-3.png";
@@ -9,6 +10,7 @@ import project7 from "../projects/project-7.png";
 
 // Importing activity images from the correct relative path
 import activity1 from "../Activities/Hackathon1.jpg";
+import activity11 from "../Activities/Hackathon4.jpg";
 import activity2 from "../Activities/Hackathon2.jpg";
 import activity3 from "../Activities/Hackathon3.jpg";
 import activity31 from "../Activities/Hackathon3-1.jpg";
@@ -16,6 +18,7 @@ import activity31 from "../Activities/Hackathon3-1.jpg";
 import activity4 from "../Activities/plage1.jpg";
 import activity5 from "../Activities/plage3.jpg";
 import activity6 from "../Activities/plage8.png";
+import activity8 from "../Activities/Hackathon8.jpg";
 
 export const HERO_CONTENT = `I am a Moroccan Software and AI Engineering student at FST Tangier with a passion for Unity game development and full stack web development. My academic journey and projects have provided me with a strong foundation in AI and machine learning. I aim to leverage my skills to create innovative solutions and immersive gaming experiences, contributing to advancements in technology and the gaming industry.`;
 
@@ -58,6 +61,13 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
+  {
+    title: "Movie Recommendation System",
+    image: project01,
+    description:
+      "A machine learning-based movie recommendation system that suggests personalized movie choices to users based on their preferences. The system features user authentication, movie ratings, and tailored recommendations using collaborative filtering and content-based algorithms.",
+    technologies: ["Python", "Streamlit", "Pandas", "NumPy", "Scikit-learn"],
+  },
   {
     title: "Gaming Club Website",
     image: project1,
@@ -122,7 +132,15 @@ export const LATEST_ACTIVITIES = [
   },
   {
     title: "First Prize at 'Sustainable Coast' Hackathon for Playa-Amigos",
+    image: activity11,
+  },
+  {
+    title: "First Prize at 'Sustainable Coast' Hackathon for Playa-Amigos",
     image: activity2,
+  },
+  {
+    title: "First Prize at 'Sustainable Coast' Hackathon for Playa-Amigos",
+    image: activity8,
   },
   {
     title: "First Prize at 'Sustainable Coast' Hackathon for Playa-Amigos",
