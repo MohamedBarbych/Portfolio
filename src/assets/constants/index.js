@@ -80,21 +80,21 @@ export const PROJECTS = [
     image: project2,
     description:
       "Developed Playa-Amigos, an educational game for children using Unity. The game focuses on teaching ocean conservation through interactive gameplay and engaging content.",
-    technologies: ["HTML", "CSS", "PHP", "Symfony", "MySQL"],
+    technologies: ["Unity Game Engine", "C#", "Adobe", "Firebase"],
   },
   {
     title: "MAD DOCTOR Game",
     image: project3,
     description:
       "Created a 2D game called Mad Doctor using Unity, where the player progresses through multiple levels. The game is based on graph theory and data structures and algorithms (DSA) to provide challenging and engaging gameplay.",
-    technologies: ["HTML", "CSS", "PHP", "Symfony", "MySQL"],
+    technologies: ["Unity Game Engine", "C#", "Adobe", "Firebase"],
   },
   {
     title: "Hospital Management Website",
     image: project4,
     description:
       "Developed a comprehensive hospital management system using HTML, CSS, PHP, and UML. The project streamlines administrative tasks, patient management, and medical records, enhancing overall efficiency and user experience.",
-    technologies: ["HTML", "CSS", "PHP", "Symfony", "MySQL"],
+    technologies: ["HTML", "CSS", "PHP", "MySQL"],
   },
   {
     title: "Taekwondo website",
@@ -108,7 +108,7 @@ export const PROJECTS = [
     image: project6,
     description:
       "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "PHP", "React", "MySQL"],
+    technologies: ["HTML", "CSS", "PHP", "Symfony", "MySQL"],
   },
   {
     title: "Portfolio Website",
