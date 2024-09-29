@@ -22,7 +22,7 @@ import activity8 from "../Activities/Hackathon8.jpg";
 
 export const HERO_CONTENT = `I am a Moroccan Software and AI Engineering student at FST Tangier with a passion for Unity game development and full stack web development. My academic journey and projects have provided me with a strong foundation in AI and machine learning. I aim to leverage my skills to create innovative solutions and immersive gaming experiences, contributing to advancements in technology and the gaming industry.`;
 
-export const ABOUT_TEXT = `As a student of Software and AI Engineering at FST Tangier, I have developed a passion for Unity game development and the principles of artificial intelligence. My educational background has provided me with a solid foundation in software engineering, intelligent systems, and machine learning. I have successfully created a 2D game in Unity, utilizing graph theory to enhance gameplay. I am committed to leveraging my skills to innovate and create immersive gaming experiences, contributing to the future of technology and entertainment.`;
+export const ABOUT_TEXT = `As a student of Software and AI Engineering at FST Tangier, I have developed a passion for creating innovative solutions and enhancing user experiences. My education has provided a solid foundation in software engineering and intelligent systems while allowing me to cultivate a diverse skill set that blends technical expertise with essential soft skills. Through hands-on projects, I have improved my problem-solving abilities, creativity, and communication. I am dedicated to driving innovation in technology and entertainment, and I enjoy participating in volunteer activities and extracurriculars that enrich my experiences and foster community.`;
 
 export const EXPERIENCES = [
   {
