@@ -19,6 +19,8 @@ import activity4 from "../Activities/plage1.jpg";
 import activity5 from "../Activities/plage3.jpg";
 import activity6 from "../Activities/plage8.png";
 import activity8 from "../Activities/Hackathon8.jpg";
+import activity7 from "../Activities/integration_1.jpg";
+import activity9 from "../Activities/integration_2.jpg";
 
 export const HERO_CONTENT = `I am a Moroccan Software and AI Engineering student at FST Tangier with a passion for Unity game development and full stack web development. My academic journey and projects have provided me with a strong foundation in AI and machine learning. I aim to leverage my skills to create innovative solutions and immersive gaming experiences, contributing to advancements in technology and the gaming industry.`;
 
@@ -164,5 +166,13 @@ export const LATEST_ACTIVITIES = [
     title:
       "Environmental Educator: Coastal Protection Awareness through Educational Games",
     image: activity6,
+  },
+  {
+    title: "First-Year Welcome: Led by Second and Third-Year Students",
+    image: activity7,
+  },
+  {
+    title: "First-Year Welcome: Led by Second and Third-Year Students",
+    image: activity9,
   },
 ];
