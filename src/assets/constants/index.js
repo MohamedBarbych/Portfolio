@@ -14,7 +14,7 @@ import activity11 from "../Activities/Hackathon4.jpg";
 import activity2 from "../Activities/Hackathon2.jpg";
 import activity3 from "../Activities/Hackathon3.jpg";
 import activity31 from "../Activities/Hackathon3-1.jpg";
-
+import activity22 from "../Activities/Hackathon22.jpg";
 import activity4 from "../Activities/plage1.jpg";
 import activity5 from "../Activities/plage3.jpg";
 import activity6 from "../Activities/plage8.png";
@@ -139,6 +139,10 @@ export const LATEST_ACTIVITIES = [
   {
     title: "First Prize at 'Sustainable Coast' Hackathon for Playa-Amigos",
     image: activity2,
+  },
+  {
+    title: "First Prize at 'Sustainable Coast' Hackathon for Playa-Amigos",
+    image: activity22,
   },
   {
     title: "First Prize at 'Sustainable Coast' Hackathon for Playa-Amigos",
