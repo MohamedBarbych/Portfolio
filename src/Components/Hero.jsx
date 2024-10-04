@@ -1,7 +1,7 @@
 import { HERO_CONTENT } from "../assets/constants";
 import ProfilPic from "../assets/MedBarbych-fotor-20240804142716.png";
 import { motion } from "framer-motion";
-import resume from "./resume.pdf";
+import resume from "./Mohamed_barbych_eng.pdf";
 
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
@@ -44,9 +44,7 @@ const Hero = () => {
               {HERO_CONTENT}
             </motion.p>
             <a href={resume} download="Resume" className="mt-4">
-              <button
-                className="bg-gradient-to-r from-blue-500 via-slate-500 to-purple-500 text-white font-semibold py-2 px-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300"
-              >
+              <button className="bg-gradient-to-r from-blue-500 via-slate-500 to-purple-500 text-white font-semibold py-2 px-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
                 Download my resume
               </button>
             </a>
