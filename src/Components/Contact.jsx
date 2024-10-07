@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Snackbar, Alert, IconButton } from "@mui/material";
-import CloseIcon from '@mui/icons-material/Close';
+import CloseIcon from "@mui/icons-material/Close";
 
 const Contact = () => {
   const form = useRef();
@@ -135,16 +135,33 @@ const Contact = () => {
         autoHideDuration={6000}
         onClose={handleCloseSnackbar}
         anchorOrigin={{ vertical: "top", horizontal: "center" }}
+        sx={{
+          "& .MuiSnackbarContent-root": {
+            backgroundColor:
+              snackbarSeverity === "success" ? "#4caf50" : "#f44336", // Color based on severity
+            minWidth: "350px", // Increase width
+            padding: "16px", // Add padding
+            fontSize: "1.2rem", // Increase font size
+            fontWeight: "bold", // Bold text
+          },
+        }}
       >
         <Alert
           onClose={handleCloseSnackbar}
           severity={snackbarSeverity}
-          sx={{ width: "100%" }}
+          sx={{
+            width: "100%",
+            fontSize: "1.2rem",
+            padding: "16px",
+            backgroundColor:
+              snackbarSeverity === "success" ? "#4caf50" : "#f44336", // Color based on severity
+            boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.1)", // Add shadow
+          }}
           action={
             <IconButton
               aria-label="close"
               color="inherit"
-              size="small"
+              size="large" // Increase the size of close icon
               onClick={handleCloseSnackbar}
             >
               <CloseIcon fontSize="inherit" />
