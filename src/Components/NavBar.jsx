@@ -1,11 +1,7 @@
 import logo from "../assets/C.png";
-import {
-  FaLinkedin,
-  FaGithub,
-  FaSquareXTwitter,
-  FaInstagram,
-  FaFacebook,
-} from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaInstagram, FaFacebook } from "react-icons/fa";
+
+import { FaSquareXTwitter } from "react-icons/fa6";
 
 const NavBar = () => {
   return (
