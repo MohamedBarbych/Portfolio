@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Snackbar, Alert, IconButton } from "@mui/material";
-import CloseIcon from "@mui/icons-material/Close"; // Import close icon
+import CloseIcon from '@mui/icons-material/Close';
 
 const Contact = () => {
   const form = useRef();
