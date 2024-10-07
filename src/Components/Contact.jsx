@@ -1,10 +1,15 @@
 import { CONTACT } from "../assets/constants";
 import { motion } from "framer-motion";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { Snackbar, Alert, IconButton } from "@mui/material";
+import CloseIcon from "@mui/icons-material/Close"; // Import close icon
 
 const Contact = () => {
   const form = useRef();
+  const [openSnackbar, setOpenSnackbar] = useState(false);
+  const [snackbarMessage, setSnackbarMessage] = useState("");
+  const [snackbarSeverity, setSnackbarSeverity] = useState("success");
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -15,13 +20,26 @@ const Contact = () => {
       })
       .then(
         (result) => {
-          console.log(result.text)
-          console.log("SUCCESS!");
+          console.log(result.text);
+          setSnackbarMessage("Email sent successfully!");
+          setSnackbarSeverity("success");
+          setOpenSnackbar(true);
+          form.current.reset(); // Clear inputs after success
         },
         (error) => {
           console.log("FAILED...", error.text);
+          setSnackbarMessage("Failed to send email. Please try again.");
+          setSnackbarSeverity("error");
+          setOpenSnackbar(true);
         }
       );
+  };
+
+  const handleCloseSnackbar = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+    setOpenSnackbar(false);
   };
 
   return (
@@ -110,6 +128,32 @@ const Contact = () => {
           </button>
         </form>
       </div>
+
+      {/*----------------- Snackbar Alert --------------------- */}
+      <Snackbar
+        open={openSnackbar}
+        autoHideDuration={6000}
+        onClose={handleCloseSnackbar}
+        anchorOrigin={{ vertical: "top", horizontal: "center" }}
+      >
+        <Alert
+          onClose={handleCloseSnackbar}
+          severity={snackbarSeverity}
+          sx={{ width: "100%" }}
+          action={
+            <IconButton
+              aria-label="close"
+              color="inherit"
+              size="small"
+              onClick={handleCloseSnackbar}
+            >
+              <CloseIcon fontSize="inherit" />
+            </IconButton>
+          }
+        >
+          {snackbarMessage}
+        </Alert>
+      </Snackbar>
     </div>
   );
 };
