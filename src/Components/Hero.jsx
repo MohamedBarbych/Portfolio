@@ -1,7 +1,7 @@
 import { HERO_CONTENT } from "../assets/constants";
 import ProfilPic from "../assets/MedBarbych-fotor-20240804142716.png";
 import { motion } from "framer-motion";
-import resume from "./Mohamed_barbych_eng.pdf";
+import resume from "./Mohamed_barbych_English.pdf";
 
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
