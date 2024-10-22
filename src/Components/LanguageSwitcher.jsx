@@ -10,7 +10,10 @@ const LanguageSwitcher = () => {
 
     const changeLanguage = (language) => {
         setSelectedLanguage(language);
-        console.log("Language changed to:", language);
+        if (window.google && window.google.translate) {
+            window.google.translate.TranslateElement.getInstance().setEnabled(true);
+            window.google.translate.TranslateElement.getInstance().setLanguage(language);
+        }
     };
 
     return (
