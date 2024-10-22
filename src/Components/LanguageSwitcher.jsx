@@ -10,9 +10,15 @@ const LanguageSwitcher = () => {
 
     const changeLanguage = (language) => {
         setSelectedLanguage(language);
+        // Call the Google Translate function for real-time translation
         if (window.google && window.google.translate) {
-            window.google.translate.TranslateElement.getInstance().setEnabled(true);
-            window.google.translate.TranslateElement.getInstance().setLanguage(language);
+            // Check if the Google Translate Element is initialized
+            const translateElement = window.google.translate.TranslateElement.getInstance();
+            if (translateElement) {
+                translateElement.setEnabled(true);
+                // Change the language
+                translateElement.setLanguage(language);
+            }
         }
     };
 
