@@ -10,18 +10,21 @@ const LanguageSwitcher = () => {
 
     const changeLanguage = (language) => {
         setSelectedLanguage(language);
-        
+
         // Check if Google Translate is available
         if (window.google && window.google.translate) {
             const translateElement = window.google.translate.TranslateElement.getInstance();
             if (translateElement) {
-                // Change the language in real-time
                 translateElement.setEnabled(true);
                 translateElement.setLanguage(language);
+            } else {
+                console.error("Google Translate instance not available.");
             }
         } else {
             console.error("Google Translate is not initialized.");
         }
+
+        setDropdownVisible(false); // Hide dropdown after selection
     };
 
     return (
