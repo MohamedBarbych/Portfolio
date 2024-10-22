@@ -1,8 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const LanguageSwitcher = () => {
     const [selectedLanguage, setSelectedLanguage] = useState('en'); // Default to English
     const [dropdownVisible, setDropdownVisible] = useState(false);
+
+    // Effect to set the default language when the component mounts
+    useEffect(() => {
+        changeLanguage(selectedLanguage); // Ensure the default language is set
+    }, []);
 
     const toggleLanguageDropdown = () => {
         setDropdownVisible(!dropdownVisible);
@@ -10,21 +15,21 @@ const LanguageSwitcher = () => {
 
     const changeLanguage = (language) => {
         setSelectedLanguage(language);
-
+        
         // Check if Google Translate is available
         if (window.google && window.google.translate) {
             const translateElement = window.google.translate.TranslateElement.getInstance();
             if (translateElement) {
+                // Change the language in real-time
                 translateElement.setEnabled(true);
                 translateElement.setLanguage(language);
+                console.log(`Language changed to: ${language}`); // Debug log
             } else {
-                console.error("Google Translate instance not available.");
+                console.error("Translate Element is not initialized.");
             }
         } else {
             console.error("Google Translate is not initialized.");
         }
-
-        setDropdownVisible(false); // Hide dropdown after selection
     };
 
     return (
