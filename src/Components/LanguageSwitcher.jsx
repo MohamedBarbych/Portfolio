@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const LanguageSwitcher = () => {
-    const [selectedLanguage, setSelectedLanguage] = useState('fr');
+    const [selectedLanguage, setSelectedLanguage] = useState('en'); // Default to English
     const [dropdownVisible, setDropdownVisible] = useState(false);
 
     const toggleLanguageDropdown = () => {
@@ -10,15 +10,17 @@ const LanguageSwitcher = () => {
 
     const changeLanguage = (language) => {
         setSelectedLanguage(language);
-        // Call the Google Translate function for real-time translation
+        
+        // Check if Google Translate is available
         if (window.google && window.google.translate) {
-            // Check if the Google Translate Element is initialized
             const translateElement = window.google.translate.TranslateElement.getInstance();
             if (translateElement) {
+                // Change the language in real-time
                 translateElement.setEnabled(true);
-                // Change the language
                 translateElement.setLanguage(language);
             }
+        } else {
+            console.error("Google Translate is not initialized.");
         }
     };
 

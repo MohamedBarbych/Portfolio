@@ -22,6 +22,15 @@ const App = () => {
         script.async = true;
         document.body.appendChild(script);
 
+        // Define the Google Translate function
+        window.googleTranslateElementInit = () => {
+            new window.google.translate.TranslateElement({
+                pageLanguage: 'en', // Default language of your site
+                includedLanguages: 'en,fr,ar', // Languages to include
+                layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
+            }, 'google_translate_element');
+        };
+
         // Cleanup script when the component unmounts
         return () => {
             document.body.removeChild(script);
@@ -36,10 +45,8 @@ const App = () => {
                 <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
             </div>
 
-            {/* Custom Language Switcher */}
-            <div className="absolute top-4 left-16 z-20">
-                <LanguageSwitcher />
-            </div>
+            {/* Google Translate Widget */}
+            <div id="google_translate_element" className="absolute top-4 left-4 z-20"></div>
 
             <div className="container mx-auto px-8 relative">
                 <NavBar />
