@@ -1,13 +1,36 @@
 import React, { useState, useEffect } from 'react';
 
 const LanguageSwitcher = () => {
-    const [selectedLanguage, setSelectedLanguage] = useState('en'); // Default to English
+    // Detect user's preferred language
+    const detectBrowserLanguage = () => {
+        const userLang = navigator.language || navigator.userLanguage;
+        return userLang.includes('fr') ? 'fr' : userLang.includes('ar') ? 'ar' : 'en'; // Default to 'en'
+    };
+
+    const [selectedLanguage, setSelectedLanguage] = useState(detectBrowserLanguage()); // Automatically detect language
     const [dropdownVisible, setDropdownVisible] = useState(false);
 
-    // Effect to set the default language when the component mounts
+    // Initialize Google Translate when the component mounts
     useEffect(() => {
-        changeLanguage(selectedLanguage); // Ensure the default language is set
-    }, []);
+        const googleTranslateInit = () => {
+            new window.google.translate.TranslateElement({
+                pageLanguage: selectedLanguage, // Use detected language as default
+                includedLanguages: 'en,fr,ar', // Add the languages you want to support
+                layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        };
+
+        const addGoogleTranslateScript = () => {
+            const script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+            document.body.appendChild(script);
+        };
+
+        window.googleTranslateElementInit = googleTranslateInit;
+        addGoogleTranslateScript(); // Add the Google Translate script
+
+    }, [selectedLanguage]); // Re-run effect if selectedLanguage changes
 
     const toggleLanguageDropdown = () => {
         setDropdownVisible(!dropdownVisible);
@@ -15,15 +38,13 @@ const LanguageSwitcher = () => {
 
     const changeLanguage = (language) => {
         setSelectedLanguage(language);
-        
-        // Check if Google Translate is available
+
         if (window.google && window.google.translate) {
             const translateElement = window.google.translate.TranslateElement.getInstance();
             if (translateElement) {
-                // Change the language in real-time
                 translateElement.setEnabled(true);
                 translateElement.setLanguage(language);
-                console.log(`Language changed to: ${language}`); // Debug log
+                console.log(`Language changed to: ${language}`);
             } else {
                 console.error("Translate Element is not initialized.");
             }
@@ -34,6 +55,7 @@ const LanguageSwitcher = () => {
 
     return (
         <div className="relative inline-block">
+            <div id="google_translate_element" style={{ display: 'none' }}></div> {/* Hidden by default */}
             <button
                 onClick={toggleLanguageDropdown}
                 className="p-2 border border-gray-300 rounded-lg hover:bg-gray-100 focus:outline-none"
