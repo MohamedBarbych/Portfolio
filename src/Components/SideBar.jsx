@@ -33,6 +33,16 @@ const NavSideBar = () => {
         </li>
         <li>
           <a
+            href="#latest-activities"
+            className={`text-neutral-300 hover:text-purple-400 ${
+              activeId === "latest-activities" ? "text-purple-400" : ""
+            }`}
+          >
+            <FontAwesomeIcon icon={faImage} size="1x" /> {/* New icon */}
+          </a>
+        </li>
+        <li>
+          <a
             href="#about"
             className={`text-neutral-300 hover:text-purple-400 ${
               activeId === "about" ? "text-purple-400" : ""
@@ -61,16 +71,7 @@ const NavSideBar = () => {
             <FontAwesomeIcon icon={faProjectDiagram} size="1x" />
           </a>
         </li>
-        <li>
-          <a
-            href="#latest-activities"
-            className={`text-neutral-300 hover:text-purple-400 ${
-              activeId === "latest-activities" ? "text-purple-400" : ""
-            }`}
-          >
-            <FontAwesomeIcon icon={faImage} size="1x" /> {/* New icon */}
-          </a>
-        </li>
+        
         <li>
           <a
             href="#projects"
