@@ -55,6 +55,11 @@ const App = () => {
                 <section id="hero">
                     <Hero />
                 </section>
+
+                <section id="latest-activities">
+                    <LatestActivities activities={LATEST_ACTIVITIES} />
+                </section>
+                
                 <section id="about">
                     <About />
                 </section>
@@ -64,9 +69,7 @@ const App = () => {
                 <section id="experience">
                     <Experience />
                 </section>
-                <section id="latest-activities">
-                    <LatestActivities activities={LATEST_ACTIVITIES} />
-                </section>
+                
                 <section id="projects">
                     <Projects />
                 </section>
