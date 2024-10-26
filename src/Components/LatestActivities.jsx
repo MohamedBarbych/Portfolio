@@ -14,17 +14,6 @@ const LatestActivities = ({ activities }) => {
     return () => clearInterval(interval);
   }, [activities.length]);
 
-  // Move to the next or previous image
-  const handlePrev = () => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + activities.length) % activities.length
-    );
-  };
-
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % activities.length);
-  };
-
   // Open modal to display full-size image
   const handleImageClick = (image) => {
     setModalImage(image);
@@ -35,6 +24,11 @@ const LatestActivities = ({ activities }) => {
   const handleCloseModal = () => {
     setIsModalOpen(false);
     setModalImage("");
+  };
+
+  // Set the current index based on circle click
+  const handleCircleClick = (index) => {
+    setCurrentIndex(index);
   };
 
   return (
@@ -63,29 +57,26 @@ const LatestActivities = ({ activities }) => {
               src={activity.image}
               alt={activity.title}
               className="w-full h-full object-cover cursor-pointer"
-              onClick={() => handleImageClick(activity.image)}//
+              onClick={() => handleImageClick(activity.image)}
             />
             <div className="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50 text-white">
               <h3 className="text-lg font-semibold">{activity.title}</h3>
             </div>
           </motion.div>
         ))}
+      </div>
 
-        {/* Left arrow */}
-        <button
-          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 p-2 text-white"
-          onClick={handlePrev}
-        >
-          ←
-        </button>
-
-        {/* Right arrow */}
-        <button
-          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 p-2 text-white"
-          onClick={handleNext}
-        >
-          →
-        </button>
+      {/* Indicator circles */}
+      <div className="flex justify-center space-x-2 mt-4">
+        {activities.map((_, index) => (
+          <div
+            key={index}
+            onClick={() => handleCircleClick(index)}
+            className={`w-3 h-3 rounded-full cursor-pointer ${
+              index === currentIndex ? "bg-purple-500" : "bg-gray-300"
+            }`}
+          />
+        ))}
       </div>
 
       {/* Modal for full-size image */}
