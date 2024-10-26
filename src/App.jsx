@@ -11,6 +11,7 @@ import NavSideBar from "./Components/SideBar";
 import ChatbotScript from "./Components/ChatbotScript";
 import LatestActivities from "./Components/LatestActivities";
 import LanguageSwitcher from "./Components/LanguageSwitcher";
+import Certification from "./Components/Certification";
 
 import { LATEST_ACTIVITIES } from "./assets/constants/index";
 
@@ -65,6 +66,9 @@ const App = () => {
                 </section>
                 <section id="techno">
                     <Techno />
+                </section>
+                <section id="techno">
+                    <Certification />
                 </section>
                 <section id="experience">
                     <Experience />

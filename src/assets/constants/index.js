@@ -23,6 +23,12 @@ import activity7 from "../Activities/integration_1.jpg";
 import activity9 from "../Activities/integration_2.jpg";
 import activity10 from "../Activities/conference222.jpg";
 
+import cert1 from "../certifications/cert1.png";
+import cert2 from "../certifications/cert2.png";
+import cert3 from "../certifications/cert3.png";
+import cert4 from "../certifications/cert4.png";
+import cert5 from "../certifications/cert5.png";
+
 export const HERO_CONTENT = `I am a Moroccan Software and AI Engineering student at FST Tangier with a passion for Unity game development and full stack web development. My academic journey and projects have provided me with a strong foundation in AI and machine learning. I aim to leverage my skills to create innovative solutions and immersive gaming experiences, contributing to advancements in technology and the gaming industry.`;
 
 export const ABOUT_TEXT = `As a student of Software and AI Engineering at FST Tangier, I have developed a passion for creating innovative solutions and enhancing user experiences. My education has provided a solid foundation in software engineering and intelligent systems while allowing me to cultivate a diverse skill set that blends technical expertise with essential soft skills. Through hands-on projects, I have improved my problem-solving abilities, creativity, and communication. I am dedicated to driving innovation in technology and entertainment, and I enjoy participating in volunteer activities and extracurriculars that enrich my experiences and foster community.`;
@@ -128,6 +134,14 @@ export const CONTACT = {
   email: "mohamedbarbych1@gmail.com",
 };
 
+
+export const certifications = [
+  { title: "Certification 1", image: cert1, link: "../certifications/cert1.png" },
+  { title: "Certification 2", image: cert2, link: "../certifications/cert2.png" },
+  { title: "Certification 3", image: cert3, link: "../certifications/cert3.png" },
+  { title: "Certification 4", image: cert4, link: "../certifications/cert4.png" },
+  { title: "Certification 5", image: cert5, link: "../certifications/cert5.png" },
+];
 export const LATEST_ACTIVITIES = [
   {
     title: "First Prize at 'Sustainable Coast' Hackathon for Playa-Amigos",
