@@ -68,9 +68,9 @@ const App = () => {
                 <section id="techno">
                     <Techno />
                 </section>
-                {/* <section id="techno">
-                    <Certification certifications={Certification}/>
-                </section> */}
+                <section id="certif">
+                <Certification certifications={certifications} />
+                </section>
                 <section id="experience">
                     <Experience />
                 </section>

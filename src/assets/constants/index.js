@@ -136,11 +136,11 @@ export const CONTACT = {
 
 
 export const certifications = [
-  { title: "Certification 1", image: cert1, link: "../certifications/cert1.png" },
-  { title: "Certification 2", image: cert2, link: "../certifications/cert2.png" },
-  { title: "Certification 3", image: cert3, link: "../certifications/cert3.png" },
-  { title: "Certification 4", image: cert4, link: "../certifications/cert4.png" },
-  { title: "Certification 5", image: cert5, link: "../certifications/cert5.png" },
+  { title: "OCI Generative AI Certified Professional", image: cert1, link: "../certifications/cert1.png" },
+  { title: "OCI AI Certified Foundations Associate", image: cert2, link: "../certifications/cert2.png" },
+  { title: "Agile Project Management", image: cert3, link: "../certifications/cert3.png" },
+  { title: "Developing Back-End Apps with Node.js and Express", image: cert4, link: "../certifications/cert4.png" },
+  { title: "Data Science & Analytics", image: cert5, link: "../certifications/cert5.png" },
 ];
 export const LATEST_ACTIVITIES = [
   {
