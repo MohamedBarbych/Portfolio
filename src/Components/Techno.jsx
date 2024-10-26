@@ -2,14 +2,19 @@ import { RiReactjsLine } from "react-icons/ri";
 import {
   SiMongodb,
   SiSymfony,
+  SiLaravel,
   SiAngular,
   SiTailwindcss,
   SiNodedotjs,
   SiSpringboot,
   SiFlask,
   SiPython,
-  SiDocker, // Docker icon
-  SiJenkins, // Jenkins icon
+  SiDocker, 
+  SiJenkins,
+  SiJava, 
+  SiC,
+  SiCplusplus, 
+
 } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import UnityLogo from "../assets/unity.png";
@@ -96,6 +101,16 @@ const Techno = () => {
           <SiSymfony className="text-7xl" />
         </motion.div>
 
+        {/* Laravel */}
+        <motion.div
+          variants={iconVariants(5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiLaravel className="text-7xl text-red-600" />
+        </motion.div>
+
         {/* Angular */}
         <motion.div
           variants={iconVariants(7)}
@@ -175,6 +190,40 @@ const Techno = () => {
         >
           <SiFlask className="text-7xl text-gray-600" />
         </motion.div>
+
+          {/* Java */}
+          <motion.div
+          variants={iconVariants(3)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiJava className="text-7xl text-orange-600" />
+        </motion.div>
+
+        {/* C */}
+        <motion.div
+          variants={iconVariants(4)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiC className="text-7xl text-blue-600" />
+        </motion.div>
+
+        {/* C++ */}
+        <motion.div
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiCplusplus className="text-7xl text-blue-600" />
+        </motion.div>
+
+      
+
+
       </motion.div>
     </div>
   );
