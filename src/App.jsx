@@ -70,9 +70,9 @@ const App = () => {
                     <Techno />
                 </section>
                 
-                <section id="certifications">
+                {/* <section id="certifications">
                     <Certification />
-                </section>
+                </section> */}
                 
                 <section id="experience">
                     <Experience />
