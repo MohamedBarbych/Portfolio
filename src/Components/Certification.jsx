@@ -42,20 +42,7 @@ const Certification = ({ certifications }) => {
         Certifications
       </motion.h2>
 
-      {/* Indicator circles */}
-      <div className="flex justify-center space-x-2 mb-4">
-        {certifications.map((_, index) => (
-          <div
-            key={index}
-            onClick={() => handleCircleClick(index)}
-            className={`w-3 h-3 rounded-full cursor-pointer ${
-              index === currentIndex ? "bg-purple-500" : "bg-gray-300"
-            }`}
-          />
-        ))}
-      </div>
-
-      <div className="overflow-hidden relative mx-auto max-w-6xl h-[32rem]">
+      <div className="overflow-hidden relative mx-auto max-w-4xl h-[28rem]">
         {certifications.map((cert, index) => (
           <motion.div
             key={index}
@@ -69,7 +56,7 @@ const Certification = ({ certifications }) => {
             <img
               src={cert.image}
               alt={cert.title}
-              className="w-full h-full object-cover cursor-pointer"
+              className="w-full h-full object-contain cursor-pointer"
               onClick={() => handleImageClick(cert.image)}
             />
             <div className="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50 text-white">
@@ -83,6 +70,19 @@ const Certification = ({ certifications }) => {
               </a>
             </div>
           </motion.div>
+        ))}
+      </div>
+
+      {/* Indicator circles moved to the bottom of the slider */}
+      <div className="flex justify-center space-x-2 mt-4">
+        {certifications.map((_, index) => (
+          <div
+            key={index}
+            onClick={() => handleCircleClick(index)}
+            className={`w-3 h-3 rounded-full cursor-pointer ${
+              index === currentIndex ? "bg-purple-500" : "bg-gray-300"
+            }`}
+          />
         ))}
       </div>
 
