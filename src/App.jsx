@@ -43,7 +43,7 @@ const App = () => {
             <ParticlesComponent />
 
             <div className="fixed top-0 -z-10 h-full w-full">
-                <div className="absolute inset-0 -z-10 h-full w-full bg-gradient-to-b from-black to-[#6300e4]"></div>
+                <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
             </div>
 
             <div className="container mx-auto px-8 relative">
@@ -53,7 +53,6 @@ const App = () => {
                     <LanguageSwitcher />
                 </div>
                 <NavSideBar />
-                
                 <section id="hero">
                     <Hero />
                 </section>
@@ -65,15 +64,12 @@ const App = () => {
                 <section id="about">
                     <About />
                 </section>
-                
                 <section id="techno">
                     <Techno />
                 </section>
-                
-                {/* <section id="certifications">
+                <section id="techno">
                     <Certification />
-                </section> */}
-                
+                </section>
                 <section id="experience">
                     <Experience />
                 </section>
@@ -81,7 +77,6 @@ const App = () => {
                 <section id="projects">
                     <Projects />
                 </section>
-                
                 <section id="contact">
                     <Contact />
                 </section>
