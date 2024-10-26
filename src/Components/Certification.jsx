@@ -62,12 +62,13 @@ const Certification = ({ certifications }) => {
             <div className="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50 text-white">
               <h3 className="text-lg font-semibold">{cert.title}</h3>
               <a
-                href={cert.link}  
-                download="certificate.jpg" 
-                className="text-purple-400 underline mt-2 block text-sm"
-            >
-                Download Certificate
-            </a>
+                  href={cert.link}  
+                  download  
+                  className="text-purple-400 underline mt-2 block text-sm"
+              >
+                  Download Certificate
+              </a>
+
 
             </div>
           </motion.div>
