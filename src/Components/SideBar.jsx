@@ -9,6 +9,7 @@ import {
   faLaptopCode,
   faImage,
   faBars,
+  faCertificate,  // Import the new icon for Certifications
 } from "@fortawesome/free-solid-svg-icons";
 import useIntersectionObserver from "../hooks/useIntersectionObserver";
 
@@ -79,6 +80,19 @@ const NavSideBar = () => {
                 <FontAwesomeIcon icon={faLaptopCode} size="1x" />
               </a>
             </li>
+            
+            {/* Certification section */}
+            <li>
+              <a
+                href="#certif"
+                className={`text-neutral-300 hover:text-purple-400 ${
+                  activeId === "certif" ? "text-purple-400" : ""
+                }`}
+              >
+                <FontAwesomeIcon icon={faCertificate} size="1x" />
+              </a>
+            </li>
+            
             <li>
               <a
                 href="#experience"
