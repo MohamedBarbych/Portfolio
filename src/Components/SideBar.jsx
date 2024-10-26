@@ -7,8 +7,8 @@ import {
   faEnvelope,
   faBriefcase,
   faLaptopCode,
-  faImage, // Icon for Latest Activities
-  faBars, // Icon for the menu button
+  faImage,
+  faBars,
 } from "@fortawesome/free-solid-svg-icons";
 import useIntersectionObserver from "../hooks/useIntersectionObserver";
 
@@ -18,20 +18,21 @@ const NavSideBar = () => {
 
   useIntersectionObserver(setActiveId);
 
-  // Toggle sidebar visibility
   const toggleSidebar = () => {
     setIsSidebarVisible(!isSidebarVisible);
   };
 
   return (
     <>
-      {/* Menu button in the top left corner */}
+      {/* Menu button */}
       <button
         onClick={toggleSidebar}
-        className="fixed top-4 left-4 z-50 p-3 text-white bg-transparent rounded-full"
-        style={{ border: "2px solid white" }}
+        className="fixed top-4 left-4 z-50 p-3 bg-transparent rounded-full outline-none focus:outline-none"
+        style={{
+          clipPath: "polygon(100% 0%, 75% 100%, 25% 100%, 0% 0%)", // Tapered shape
+        }}
       >
-        <FontAwesomeIcon icon={faBars} size="2x" /> {/* Increase icon size */}
+        <FontAwesomeIcon icon={faBars} size="2x" className="text-white" />
       </button>
 
       {/* Sidebar */}
@@ -55,7 +56,7 @@ const NavSideBar = () => {
                   activeId === "latest-activities" ? "text-purple-400" : ""
                 }`}
               >
-                <FontAwesomeIcon icon={faImage} size="1x" /> {/* New icon */}
+                <FontAwesomeIcon icon={faImage} size="1x" />
               </a>
             </li>
             <li>
