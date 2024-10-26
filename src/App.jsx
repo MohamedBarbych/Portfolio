@@ -14,6 +14,7 @@ import LanguageSwitcher from "./Components/LanguageSwitcher";
 import Certification from "./Components/Certification";
 
 import { LATEST_ACTIVITIES } from "./assets/constants/index";
+import { certifications } from "./assets/constants/index";
 
 const App = () => {
     useEffect(() => {
@@ -68,7 +69,7 @@ const App = () => {
                     <Techno />
                 </section>
                 <section id="techno">
-                    <Certification />
+                    <Certification certifications={Certification}/>
                 </section>
                 <section id="experience">
                     <Experience />
