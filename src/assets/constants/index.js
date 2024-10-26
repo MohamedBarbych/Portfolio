@@ -23,11 +23,11 @@ import activity7 from "../Activities/integration_1.jpg";
 import activity9 from "../Activities/integration_2.jpg";
 import activity10 from "../Activities/conference222.jpg";
 
-import cert1 from "../certifications/cert1.png";
-import cert2 from "../certifications/cert2.png";
-import cert3 from "../certifications/cert3.png";
-import cert4 from "../certifications/cert4.png";
-import cert5 from "../certifications/cert5.png";
+import cert1 from "/certifications/cert1.png";
+import cert2 from "/certifications/cert2.png";
+import cert3 from "/certifications/cert3.png";
+import cert4 from "/certifications/cert4.png";
+import cert5 from "/certifications/cert5.png";
 
 export const HERO_CONTENT = `I am a Moroccan Software and AI Engineering student at FST Tangier with a passion for Unity game development and full stack web development. My academic journey and projects have provided me with a strong foundation in AI and machine learning. I aim to leverage my skills to create innovative solutions and immersive gaming experiences, contributing to advancements in technology and the gaming industry.`;
 
@@ -136,12 +136,13 @@ export const CONTACT = {
 
 
 export const certifications = [
-  { title: "OCI Generative AI Certified Professional", image: cert1, link: "../certifications/cert1.png" },
-  { title: "OCI AI Certified Foundations Associate", image: cert2, link: "../certifications/cert2.png" },
-  { title: "Agile Project Management", image: cert3, link: "../certifications/cert3.png" },
-  { title: "Developing Back-End Apps with Node.js and Express", image: cert4, link: "../certifications/cert4.png" },
-  { title: "Data Science & Analytics", image: cert5, link: "../certifications/cert5.png" },
+  { title: "OCI Generative AI Certified Professional", image: cert1, link: "/certifications/cert1.png" },
+  { title: "OCI AI Certified Foundations Associate", image: cert2, link: "/certifications/cert2.png" },
+  { title: "Agile Project Management", image: cert3, link: "/certifications/cert3.png" },
+  { title: "Developing Back-End Apps with Node.js and Express", image: cert4, link: "/certifications/cert4.png" },
+  { title: "Data Science & Analytics", image: cert5, link: "/certifications/cert5.png" }
 ];
+
 export const LATEST_ACTIVITIES = [
   {
     title: "First Prize at 'Sustainable Coast' Hackathon for Playa-Amigos",
