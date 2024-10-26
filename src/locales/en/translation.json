@@ -1,0 +1,56 @@
+{
+    "logo": "MYIMG",
+    "language": "🇫🇷",
+    "name": "Mohamed Barbych",
+    "title": "Software and AI Engineer Student",
+    "intro": {
+      "description": "I am a Moroccan Software and AI Engineering student at FST Tangier with a passion for Unity game development and full stack web development. My academic journey and projects have provided me with a strong foundation in AI and machine learning. I aim to leverage my skills to create innovative solutions and immersive gaming experiences, contributing to advancements in technology and the gaming industry.",
+      "resumeLink": "/path-to-resume"
+    },
+    "latestActivities": [
+      {
+        "title": "First Prize at 'Sustainable Coast' Hackathon for Playa-Amigos",
+        "description": "First Prize at 'Sustainable Coast' Hackathon for Playa-Amigos",
+        "image": "/path-to-image1"
+      }
+    ],
+    "about": {
+      "description": "As a student of Software and AI Engineering at FST Tangier, I have developed a passion for creating innovative solutions and enhancing user experiences. My education has provided a solid foundation in software engineering and intelligent systems while allowing me to cultivate a diverse skill set that blends technical expertise with essential soft skills. Through hands-on projects, I have improved my problem-solving abilities, creativity, and communication. I am dedicated to driving innovation in technology and entertainment, and I enjoy participating in volunteer activities and extracurriculars that enrich my experiences and foster community."
+    },
+    "technologies": ["Unity", "C#", "Adobe", "Firebase"],
+    "certifications": [
+      {
+        "title": "OCI AI Certified Foundations Associate",
+        "link": "/path-to-certification",
+        "image": "/path-to-certification-image"
+      }
+    ],
+    "experiences": [
+      {
+        "date": "July 2024",
+        "title": "Intern - Game Development - DINOMITE STUDIOS",
+        "description": "As an intern, I contributed to the development of 'Playa-Amigos,' an educational game focused on ocean conservation for children. I collaborated with a team to design gameplay mechanics and interactive content, participated in brainstorming sessions, and assisted in playtesting to enhance user experience. This role allowed me to apply my Unity and programming skills while working on a meaningful project promoting sustainability.",
+        "technologies": ["Unity Game Engine", "C#", "Adobe", "Firebase"]
+      }
+    ],
+    "projects": [
+      {
+        "title": "Movie Recommendation System",
+        "description": "A machine learning-based movie recommendation system that suggests personalized movie choices to users based on their preferences. The system features user authentication, movie ratings, and tailored recommendations using collaborative filtering and content-based algorithms.",
+        "technologies": ["Python", "Streamlit", "Pandas", "NumPy", "Scikit-learn"]
+      }
+    ],
+    "contact": {
+      "location": "Tangier, Morocco",
+      "phone": "+2126-10-62-62-26",
+      "form": {
+        "fields": {
+          "name": "Name",
+          "email": "Email",
+          "message": "Message"
+        },
+        "button": "Send"
+      }
+    }
+  }
+  
