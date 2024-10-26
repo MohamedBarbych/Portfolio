@@ -18,6 +18,8 @@ import {
 import { BiLogoPostgresql } from "react-icons/bi";
 import UnityLogo from "../assets/unity.png";
 import { motion } from "framer-motion";
+import { FaJava } from "react-icons/fa";
+
 
 const iconVariants = (duration) => ({
   initial: { y: -10 },
@@ -211,7 +213,14 @@ const Techno = () => {
           <SiCplusplus className="text-7xl text-blue-600" />
         </motion.div>
 
-      
+        <motion.div
+            variants={iconVariants(3)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4"
+          >
+            <FaJava className="text-7xl text-orange-600" />
+          </motion.div>
 
 
       </motion.div>
