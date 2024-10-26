@@ -11,7 +11,6 @@ import {
   SiPython,
   SiDocker, 
   SiJenkins,
-  SiJava, 
   SiC,
   SiCplusplus, 
 
@@ -191,16 +190,7 @@ const Techno = () => {
           <SiFlask className="text-7xl text-gray-600" />
         </motion.div>
 
-          {/* Java */}
-          <motion.div
-          variants={iconVariants(3)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <SiJava className="text-7xl text-orange-600" />
-        </motion.div>
-
+         
         {/* C */}
         <motion.div
           variants={iconVariants(4)}
