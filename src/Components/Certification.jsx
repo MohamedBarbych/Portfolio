@@ -59,18 +59,21 @@ const Certification = ({ certifications }) => {
               className="w-full h-full object-contain cursor-pointer"
               onClick={() => handleImageClick(cert.image)}
             />
-            <div className="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50 text-white">
+            
+            {/* Description Band */}
+            <div
+              className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4 flex justify-between items-center"
+              style={{ width: "100%", height: "fit-content" }}
+            >
               <h3 className="text-lg font-semibold">{cert.title}</h3>
               <a
                 href={cert.link} 
                 target="_blank"  
                 rel="noopener noreferrer"  
-                className="text-purple-400 underline mt-2 block text-sm"
-            >
+                className="text-purple-400 underline text-sm ml-4"
+              >
                 View Certificate
-            </a>
-
-
+              </a>
             </div>
           </motion.div>
         ))}
@@ -109,4 +112,4 @@ const Certification = ({ certifications }) => {
   );
 };
 
-export default Certification;
+export default Certification;//
