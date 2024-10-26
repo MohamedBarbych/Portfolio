@@ -28,9 +28,10 @@ const NavSideBar = () => {
       {/* Menu button in the top left corner */}
       <button
         onClick={toggleSidebar}
-        className="fixed top-4 left-4 z-50 p-2 text-neutral-800 bg-white rounded-full shadow-md"
+        className="fixed top-4 left-4 z-50 p-3 text-white bg-transparent rounded-full"
+        style={{ border: "2px solid white" }}
       >
-        <FontAwesomeIcon icon={faBars} size="lg" />
+        <FontAwesomeIcon icon={faBars} size="2x" /> {/* Increase icon size */}
       </button>
 
       {/* Sidebar */}
