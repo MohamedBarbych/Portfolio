@@ -8,6 +8,8 @@ import {
   SiSpringboot,
   SiFlask,
   SiPython,
+  SiDocker, // Docker icon
+  SiJenkins, // Jenkins icon
 } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import UnityLogo from "../assets/unity.png";
@@ -62,6 +64,26 @@ const Techno = () => {
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
           <RiReactjsLine className="text-7xl text-cyan-400 " />
+        </motion.div>
+
+        {/* Docker */}
+        <motion.div
+          variants={iconVariants(5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiDocker className="text-7xl text-blue-500" />
+        </motion.div>
+
+        {/* Jenkins */}
+        <motion.div
+          variants={iconVariants(6)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiJenkins className="text-7xl text-red-500" />
         </motion.div>
 
         {/* Symfony */}
