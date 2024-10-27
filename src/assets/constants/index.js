@@ -20,7 +20,6 @@ import activity5 from "../Activities/plage3.jpg";
 import activity6 from "../Activities/plage8.png";
 import activity8 from "../Activities/Hackathon8.jpg";
 import activity7 from "../Activities/integration_1.jpg";
-import activity9 from "../Activities/integration_2.jpg";
 import activity10 from "../Activities/conference222.jpg";
 
 import cert1 from "/certifications/cert1.png";
@@ -196,8 +195,5 @@ export const LATEST_ACTIVITIES = [
     title: "First-Year Welcome: Led by Second and Third-Year Students",
     image: activity7,
   },
-  {
-    title: "First-Year Welcome: Led by Second and Third-Year Students",
-    image: activity9,
-  },
+ 
 ];
