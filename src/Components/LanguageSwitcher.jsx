@@ -9,10 +9,14 @@ const LanguageSwitcher = () => {
         setDropdownVisible(!dropdownVisible);
     };
 
-    const changeLanguage = (language) => {
-        i18n.changeLanguage(language).then(() => {
-            setDropdownVisible(false);
-        });
+    const changeLanguage = async (language) => {
+        console.log("Changing language to:", language); // Debugging line
+        try {
+            await i18n.changeLanguage(language);
+            setDropdownVisible(false); // Close the dropdown after changing language
+        } catch (error) {
+            console.error("Error changing language:", error);
+        }
     };
 
     const getFlagIcon = (language) => {
@@ -24,7 +28,7 @@ const LanguageSwitcher = () => {
             case 'ar':
                 return '🇲🇦';
             default:
-                return '🇺🇸'; 
+                return '🇺🇸'; // Default to English if undetected
         }
     };
 
