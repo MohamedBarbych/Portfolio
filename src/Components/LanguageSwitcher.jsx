@@ -11,24 +11,22 @@ const LanguageSwitcher = () => {
 
     const changeLanguage = (language) => {
         i18n.changeLanguage(language).then(() => {
-            setDropdownVisible(false); // Hide dropdown after language change
+            setDropdownVisible(false);
         });
     };
 
-    // Close the dropdown when clicking outside the component
-    const handleClickOutside = (event) => {
-        if (!event.target.closest('.language-switcher-container')) {
-            setDropdownVisible(false);
+    const getFlagIcon = (language) => {
+        switch (language) {
+            case 'fr':
+                return '🇫🇷';
+            case 'en':
+                return '🇺🇸';
+            case 'ar':
+                return '🇲🇦';
+            default:
+                return '🇺🇸'; 
         }
     };
-
-    // Add event listener to close dropdown when clicking outside
-    React.useEffect(() => {
-        document.addEventListener('click', handleClickOutside);
-        return () => {
-            document.removeEventListener('click', handleClickOutside);
-        };
-    }, []);
 
     return (
         <div className="relative inline-block language-switcher-container">
@@ -36,7 +34,7 @@ const LanguageSwitcher = () => {
                 onClick={toggleLanguageDropdown}
                 className="p-2 border border-gray-300 rounded-lg hover:bg-gray-100 focus:outline-none"
             >
-                {i18n.language === 'fr' ? '🇫🇷' : i18n.language === 'en' ? '🇺🇸' : '🇲🇦'}
+                {getFlagIcon(i18n.language)}
             </button>
             {dropdownVisible && (
                 <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-300 rounded-lg shadow-lg z-10">
