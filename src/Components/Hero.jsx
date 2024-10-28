@@ -15,15 +15,14 @@ const container = (delay) => ({
 const Hero = () => {
   return (
     <div className="border-b border-neutral-900 pb-4 lg:mb-35">
-      <div className="flex flrx-wrap">
+      <div className="flex flex-wrap">
         <div className="w-full lg:w-1/2">
           <div className="flex flex-col items-center lg:items-start">
             <motion.h1
               variants={container(0)}
               initial="hidden"
               animate="visible"
-              className="pb-16 text-6xl font-thin tracking-tight lg:mt-16
-                     lg:text-8xl"
+              className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl"
             >
               Mohamed Barbych
             </motion.h1>
@@ -44,14 +43,14 @@ const Hero = () => {
               {HERO_CONTENT}
             </motion.p>
             <a href={resume} download="Resume" className="mt-4">
-              <button className="bg-gradient-to-r from-blue-500 via-slate-500 to-purple-500 text-white font-semibold py-2 px-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+              <button className="bg-gradient-to-r from-blue-500 via-slate-500 to-purple-500 text-white font-semibold py-2 px-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105 hover:brightness-110">
                 Download my resume
               </button>
             </a>
           </div>
         </div>
         <div className="w-full lg:w-1/2 lg:p-8">
-          <div className="flex justify-center ">
+          <div className="flex justify-center">
             <motion.img
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
