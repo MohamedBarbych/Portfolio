@@ -56,7 +56,7 @@ const Projects = () => {
           href="https://github.com/your-github-profile"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center bg-gradient-to-r from-blue-500 via-slate-500 to-purple-500 text-white font-semibold py-2 px-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300"
+          className="flex items-center bg-gradient-to-r from-blue-500 via-slate-500 to-purple-500 text-white font-semibold py-2 px-4 rounded-lg shadow-lg transition duration-300 transform hover:scale-105 hover:brightness-110"
         >
           <FontAwesomeIcon icon={faGithub} className="mr-2" />
           See more
