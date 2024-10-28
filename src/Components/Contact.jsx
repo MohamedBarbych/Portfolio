@@ -121,11 +121,12 @@ const Contact = () => {
             ></textarea>
           </div>
           <button
-            type="submit"
-            className="bg-gradient-to-r from-blue-500 via-slate-500 to-purple-500 text-white font-semibold py-2 px-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300"
-          >
-            Send
-          </button>
+              type="submit"
+              className="bg-gradient-to-r from-blue-500 via-slate-500 to-purple-500 text-white font-semibold py-2 px-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105 hover:brightness-110"
+            >
+              Send
+            </button>
+
         </form>
       </div>
 
