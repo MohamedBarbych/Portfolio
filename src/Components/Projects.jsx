@@ -53,10 +53,10 @@ const Projects = () => {
       </div>
       <div className="flex justify-center mt-8">
         <a
-          href="https://github.com/MohamedBarbych?tab=repositories"
+          href="https://github.com/your-github-profile"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center px-4 py-2 text-white bg-neutral-900 hover:bg-neutral-800 rounded shadow-lg transition duration-300"
+          className="flex items-center bg-gradient-to-r from-blue-500 via-slate-500 to-purple-500 text-white font-semibold py-2 px-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300"
         >
           <FontAwesomeIcon icon={faGithub} className="mr-2" />
           See more
