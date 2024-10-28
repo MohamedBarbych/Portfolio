@@ -1,5 +1,7 @@
 import { PROJECTS } from "../assets/constants";
 import { motion } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Projects = () => {
   return (
@@ -48,6 +50,17 @@ const Projects = () => {
             </motion.div>
           </div>
         ))}
+      </div>
+      <div className="flex justify-center mt-8">
+        <a
+          href="https://github.com/MohamedBarbych?tab=repositories"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center px-4 py-2 text-white bg-neutral-900 hover:bg-neutral-800 rounded shadow-lg transition duration-300"
+        >
+          <FontAwesomeIcon icon={faGithub} className="mr-2" />
+          See more
+        </a>
       </div>
     </div>
   );
