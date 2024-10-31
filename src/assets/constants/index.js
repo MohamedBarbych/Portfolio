@@ -129,7 +129,7 @@ export const PROJECTS = [
 
 export const CONTACT = {
   address: "Tangier, Morocco ",
-  email: "mohamedbarbych1@gmail.com",
+  email: "mohamed.barbych@etu.uae.ac.ma",
 };
 
 
