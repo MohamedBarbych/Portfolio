@@ -67,6 +67,7 @@ const Contact = () => {
           transition={{ duration: 1 }}
           className="my-4 text-neutral-400"
         >
+          {CONTACT.email}
         </motion.p>
 
         <form
