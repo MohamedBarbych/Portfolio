@@ -129,7 +129,6 @@ export const PROJECTS = [
 
 export const CONTACT = {
   address: "Tangier, Morocco ",
-  phoneNo: "+2126-10-62-62-26 ",
   email: "mohamedbarbych1@gmail.com",
 };
 
