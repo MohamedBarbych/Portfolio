@@ -68,11 +68,11 @@ const Certification = ({ certifications }) => {
                 rel="noopener noreferrer"
                 className="text-sm ml-4 font-semibold transition duration-200 ease-in-out text-purple-400 hover:text-purple-500 transform hover:scale-105"
                 style={{
-                  fontFamily: "'Roboto', sans-serif", // Use a clean, modern font
-                  padding: "0.25rem 0.5rem",         // Add some padding for a clickable feel
-                  backgroundColor: "rgba(255, 255, 255, 0.1)", // Semi-transparent background on hover
+                  fontFamily: "'Roboto', sans-serif", 
+                  padding: "0.25rem 0.5rem",         
+                  backgroundColor: "rgba(255, 255, 255, 0.1)", 
                   borderRadius: "4px",
-                  textDecoration: "none",             // Remove underline for a cleaner look
+                  textDecoration: "none",             
                 }}
               >
                 View Certificate
