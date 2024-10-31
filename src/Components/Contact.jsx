@@ -141,8 +141,8 @@ const Contact = () => {
             backgroundColor:
               snackbarSeverity === "success" ? "#4caf50" : "#f44336", 
             minWidth: "350px", 
-            padding: "16px", // Add padding
-            fontSize: "1.2rem", // Increase font size
+            padding: "16px", 
+            fontSize: "1.2rem", 
             fontWeight: "bold", // Bold text
           },
         }}
