@@ -1,4 +1,6 @@
-import { RiReactjsLine } from "react-icons/ri";
+import { 
+  RiReactjsLine 
+} from "react-icons/ri";
 import {
   SiMongodb,
   SiSymfony,
@@ -9,17 +11,17 @@ import {
   SiSpringboot,
   SiFlask,
   SiPython,
-  SiDocker, 
+  SiDocker,
   SiJenkins,
   SiC,
-  SiCplusplus, 
-
+  SiCplusplus,
+  SiOracle,
+  SiCsharp // New imports
 } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import UnityLogo from "../assets/unity.png";
 import { motion } from "framer-motion";
 import { FaJava } from "react-icons/fa";
-
 
 const iconVariants = (duration) => ({
   initial: { y: -10 },
@@ -90,6 +92,26 @@ const Techno = () => {
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
           <SiJenkins className="text-7xl text-red-500" />
+        </motion.div>
+
+        {/* Oracle */}
+        <motion.div
+          variants={iconVariants(4)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiOracle className="text-7xl text-orange-700" />
+        </motion.div>
+
+        {/* C# */}
+        <motion.div
+          variants={iconVariants(3.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiCsharp className="text-7xl text-purple-600" />
         </motion.div>
 
         {/* Symfony */}
@@ -192,7 +214,6 @@ const Techno = () => {
           <SiFlask className="text-7xl text-gray-600" />
         </motion.div>
 
-         
         {/* C */}
         <motion.div
           variants={iconVariants(4)}
@@ -213,16 +234,15 @@ const Techno = () => {
           <SiCplusplus className="text-7xl text-blue-600" />
         </motion.div>
 
+        {/* Java */}
         <motion.div
-            variants={iconVariants(3)}
-            initial="initial"
-            animate="animate"
-            className="rounded-2xl border-4 border-neutral-800 p-4"
-          >
-            <FaJava className="text-7xl text-orange-600" />
-          </motion.div>
-
-
+          variants={iconVariants(3)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <FaJava className="text-7xl text-orange-600" />
+        </motion.div>
       </motion.div>
     </div>
   );
