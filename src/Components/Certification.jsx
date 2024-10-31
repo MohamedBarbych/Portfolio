@@ -6,7 +6,6 @@ const Certification = ({ certifications }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalImage, setModalImage] = useState("");
 
-  // Auto-slide every 5 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % certifications.length);
@@ -14,7 +13,6 @@ const Certification = ({ certifications }) => {
     return () => clearInterval(interval);
   }, [certifications.length]);
 
-  // Open modal with full-size image
   const handleImageClick = (image) => {
     setModalImage(image);
     setIsModalOpen(true);
