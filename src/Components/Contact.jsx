@@ -155,7 +155,7 @@ const Contact = () => {
             fontSize: "1.2rem",
             padding: "16px",
             backgroundColor:
-              snackbarSeverity === "success" ? "#4caf50" : "#f44336", // Color based on severity
+              snackbarSeverity === "success" ? "#4caf50" : "#f44336", 
             boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.1)", 
           }}
           action={
