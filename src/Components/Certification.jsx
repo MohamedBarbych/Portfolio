@@ -18,7 +18,6 @@ const Certification = ({ certifications }) => {
     setIsModalOpen(true);
   };
 
-  // Close modal
   const handleCloseModal = () => {
     setIsModalOpen(false);
     setModalImage("");
