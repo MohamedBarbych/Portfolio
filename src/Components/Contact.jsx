@@ -143,7 +143,7 @@ const Contact = () => {
             minWidth: "350px", 
             padding: "16px", 
             fontSize: "1.2rem", 
-            fontWeight: "bold", // Bold text
+            fontWeight: "bold", 
           },
         }}
       >
