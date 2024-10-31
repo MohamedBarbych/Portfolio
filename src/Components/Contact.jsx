@@ -140,7 +140,7 @@ const Contact = () => {
           "& .MuiSnackbarContent-root": {
             backgroundColor:
               snackbarSeverity === "success" ? "#4caf50" : "#f44336", 
-            minWidth: "350px", // Increase width
+            minWidth: "350px", 
             padding: "16px", // Add padding
             fontSize: "1.2rem", // Increase font size
             fontWeight: "bold", // Bold text
