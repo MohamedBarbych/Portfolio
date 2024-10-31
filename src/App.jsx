@@ -13,6 +13,7 @@ import ChatbotScript from "./Components/ChatbotScript";
 import LatestActivities from "./Components/LatestActivities";
 import LanguageSwitcher from "./Components/LanguageSwitcher";
 import Certification from "./Components/Certification";
+import Footer from "./Components/Footer"; // Importing the Footer component
 import { LATEST_ACTIVITIES, certifications } from "./assets/constants";
 
 const App = () => {
@@ -54,6 +55,7 @@ const App = () => {
                 </section>
             </div>
             <ChatbotScript />
+            <Footer /> {/* Call the Footer component here */}
         </div>
     );
 };
