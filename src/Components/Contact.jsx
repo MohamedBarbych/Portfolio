@@ -162,7 +162,7 @@ const Contact = () => {
             <IconButton
               aria-label="close"
               color="inherit"
-              size="large" // Increase the size of close icon
+              size="large" 
               onClick={handleCloseSnackbar}
             >
               <CloseIcon fontSize="inherit" />
