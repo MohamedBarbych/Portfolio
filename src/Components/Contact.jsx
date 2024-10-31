@@ -4,6 +4,8 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Snackbar, Alert, IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 
 const Contact = () => {
   const form = useRef();
@@ -57,16 +59,18 @@ const Contact = () => {
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 1 }}
-          className="my-4 text-neutral-400"
+          className="my-4 text-neutral-400 flex items-center justify-center"
         >
+          <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2 text-purple-400" />
           {CONTACT.address}
         </motion.p>
         <motion.p
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: 100 }}
           transition={{ duration: 1 }}
-          className="my-4 text-neutral-400"
+          className="my-4 text-neutral-400 flex items-center justify-center"
         >
+          <FontAwesomeIcon icon={faEnvelope} className="mr-2 text-purple-400" />
           {CONTACT.email}
         </motion.p>
 
@@ -176,4 +180,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Contact;   
