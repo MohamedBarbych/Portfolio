@@ -30,7 +30,7 @@ const NavSideBar = () => {
         onClick={toggleSidebar}
         className="fixed top-4 left-4 z-50 p-3 bg-transparent rounded-full outline-none focus:outline-none"
         style={{
-          clipPath: "polygon(100% 0%, 75% 100%, 25% 100%, 0% 0%)", // Tapered shape
+          clipPath: "polygon(100% 0%, 75% 100%, 25% 100%, 0% 0%)", // ------  Changing teh shpe of the button ------------
         }}
       >
         <FontAwesomeIcon icon={faBars} size="2x" className="text-white" />
