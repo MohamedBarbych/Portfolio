@@ -82,7 +82,7 @@ const Certification = ({ certifications }) => {
         ))}
       </div>
 
-      {/* Indicator circles moved to the bottom of the slider */}
+      {/*--------------- Indicator circles moved to the bottom of the slider --------------*/}
       <div className="flex justify-center space-x-2 mt-4">
         {certifications.map((_, index) => (
           <div
