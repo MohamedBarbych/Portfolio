@@ -25,7 +25,7 @@ const NavSideBar = () => {
 
   return (
     <>
-      {/* Menu_button */}
+      {/* Menu__button */}
       <button
         onClick={toggleSidebar}
         className="fixed top-4 left-4 z-50 p-3 bg-transparent rounded-full outline-none focus:outline-none"
