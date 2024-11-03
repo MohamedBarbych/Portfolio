@@ -56,7 +56,7 @@ const Certification = ({ certifications }) => {
               onClick={() => handleImageClick(cert.image)}
             />
             
-            {/* ---------Description Band -----*/}
+            {/* ---------Description_Band -----*/}
             <div
               className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4 flex justify-between items-center"
               style={{ width: "100%", height: "fit-content" }}
