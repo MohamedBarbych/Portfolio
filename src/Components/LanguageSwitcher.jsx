@@ -28,7 +28,7 @@ const LanguageSwitcher = () => {
             case 'ar':
                 return '🇲🇦';
             default:
-                return '🇺🇸'; // Default to English if undetected
+                return '🇺🇸'; // Default to English in case if undetected
         }
     };
 
