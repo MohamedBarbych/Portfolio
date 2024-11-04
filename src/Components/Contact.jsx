@@ -134,7 +134,7 @@ const Contact = () => {
         </form>
       </div>
 
-      {/*--------------- Snackbar Alert ------------------ */}
+      {/*--------------- Snackbar_Alert ------------------ */}
       <Snackbar
         open={openSnackbar}
         autoHideDuration={6000}
