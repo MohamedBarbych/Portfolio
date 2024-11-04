@@ -13,7 +13,7 @@ const LanguageSwitcher = () => {
         console.log("Changing language to:", language); // Debugging line
         try {
             await i18n.changeLanguage(language);
-            setDropdownVisible(false); // Close the dropdown after changing language
+            setDropdownVisible(false); 
         } catch (error) {
             console.error("Error changing language:", error);
         }
