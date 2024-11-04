@@ -9,7 +9,7 @@ import {
   faLaptopCode,
   faImage,
   faBars,
-  faCertificate,  // Import the new icon for Certifications
+  faCertificate, 
 } from "@fortawesome/free-solid-svg-icons";
 import useIntersectionObserver from "../hooks/useIntersectionObserver";
 
