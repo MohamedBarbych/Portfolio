@@ -14,7 +14,7 @@ const LatestActivities = ({ activities }) => {
     return () => clearInterval(interval);
   }, [activities.length]);
 
-  // Open modal to display full-size image
+  // Open to display full-size image
   const handleImageClick = (image) => {
     setModalImage(image);
     setIsModalOpen(true);
