@@ -1,4 +1,3 @@
-// Importing project images from the correct relative path
 import project01 from "../projects/project-01.png";
 import project1 from "../projects/project-1.png";
 import project2 from "../projects/project-2.png";
@@ -8,7 +7,6 @@ import project5 from "../projects/project-5.png";
 import project6 from "../projects/project-6.png";
 import project7 from "../projects/project-7.png";
 
-// Importing activity images from the correct relative path
 import activity1 from "../Activities/Hackathon1.jpg";
 import activity11 from "../Activities/Hackathon4.jpg";
 import activity2 from "../Activities/Hackathon2.jpg";
