@@ -10,7 +10,7 @@ const LanguageSwitcher = () => {
     };
 
     const changeLanguage = async (language) => {
-        console.log("Changing language to:", language); // Debugging line
+        console.log("Changing language to:", language); 
         try {
             await i18n.changeLanguage(language);
             setDropdownVisible(false); 
