@@ -66,7 +66,7 @@ const LatestActivities = ({ activities }) => {
         ))}
       </div>
 
-      {/* Indicator circles */}
+      {/* Indicator_circles */}
       <div className="flex justify-center space-x-2 mt-4">
         {activities.map((_, index) => (
           <div
