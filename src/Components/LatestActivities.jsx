@@ -26,7 +26,7 @@ const LatestActivities = ({ activities }) => {
     setModalImage("");
   };
 
-  // Set the current index based on circle click
+  // Set the current index based on circle-click
   const handleCircleClick = (index) => {
     setCurrentIndex(index);
   };
