@@ -36,7 +36,7 @@ const NavSideBar = () => {
         <FontAwesomeIcon icon={faBars} size="2x" className="text-white" />
       </button>
 
-      {/* Sidebar */}
+      {/* Side_bar */}
       {isSidebarVisible && (
         <nav className="fixed top-1/2 right-4 transform -translate-y-1/2 z-40">
           <ul className="flex flex-col space-y-4 bg-white/10 p-4 rounded-xl">
