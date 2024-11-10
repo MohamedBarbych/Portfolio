@@ -79,7 +79,7 @@ const LatestActivities = ({ activities }) => {
         ))}
       </div>
 
-      {/* Modal for full-size image */}
+      {/* Modal for fullsize image */}
       {isModalOpen && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50">
           <button
