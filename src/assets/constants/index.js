@@ -19,6 +19,10 @@ import activity6 from "../Activities/plage8.png";
 import activity8 from "../Activities/Hackathon8.jpg";
 import activity7 from "../Activities/integration_1.jpg";
 import activity10 from "../Activities/conference222.jpg";
+import activity1u1 from "../Activities/HackUIT4.jpg";
+import activity1u0 from "../Activities/HackUIT0.jpeg";
+
+
 
 import cert1 from "/certifications/cert1.png";
 import cert2 from "/certifications/cert2.png";
@@ -140,6 +144,14 @@ export const certifications = [
 ];
 
 export const LATEST_ACTIVITIES = [
+  {
+    title: "3rd place at teh 2nd Hack@UIT, focusing on water conservation",
+    image: activity1u0,
+  },
+  {
+    title: "3rd place at teh 2nd Hack@UIT, focusing on water conservation",
+    image: activity1u1,
+  },
   {
     title: "First Prize at 'Sustainable Coast' Hackathon for Playa-Amigos",
     image: activity1,
