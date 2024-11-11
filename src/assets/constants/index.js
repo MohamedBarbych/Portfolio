@@ -145,6 +145,10 @@ export const certifications = [
 
 export const LATEST_ACTIVITIES = [
   {
+    title: "First Prize at 'Sustainable Coast' Hackathon for Playa-Amigos",
+    image: activity1,
+  },
+  {
     title: "3rd place at teh 2nd Hack@UIT, focusing on water conservation",
     image: activity1u0,
   },
@@ -152,10 +156,7 @@ export const LATEST_ACTIVITIES = [
     title: "3rd place at teh 2nd Hack@UIT, focusing on water conservation",
     image: activity1u1,
   },
-  {
-    title: "First Prize at 'Sustainable Coast' Hackathon for Playa-Amigos",
-    image: activity1,
-  },
+
   {
     title: "First Prize at 'Sustainable Coast' Hackathon for Playa-Amigos",
     image: activity11,
