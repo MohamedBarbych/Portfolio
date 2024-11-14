@@ -23,7 +23,7 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
-          setSnackbarMessage("Email sent successfully!");
+          setSnackbarMessage("Email sent successfully! Thank you for reaching out.");
           setSnackbarSeverity("success");
           setOpenSnackbar(true);
           form.current.reset(); // Clear inputs after success
