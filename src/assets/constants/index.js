@@ -19,7 +19,7 @@ import activity6 from "../Activities/plage8.png";
 import activity8 from "../Activities/Hackathon8.jpg";
 import activity7 from "../Activities/integration_1.jpg";
 import activity10 from "../Activities/conference222.jpg";
-import activity1u1 from "../Activities/HackUIT4.jpg";
+import activity1u1 from "../Activities/HackUIT3.jpg";
 import activity1u0 from "../Activities/HackUIT0.jpeg";
 
 
